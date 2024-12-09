@@ -1,0 +1,51 @@
+.popular {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.popular-item {
+  margin-top: 50px;
+  display: inline-flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .popular {
+    margin-top: 7%;
+    height: auto; /* Remove the fixed height */
+  }
+
+  .popular h1 {
+    font-size: 36px; /* Reduce font size for smaller screens */
+  }
+
+  .popular hr {
+    width: 150px; /* Reduce the width of the hr element */
+  }
+
+  .popular-item {
+    margin-top: 30px; /* Adjust margin for smaller screens */
+    flex-direction: column; /* Stack popular items in a column on smaller screens */
+    align-items: center;
+    gap: 20px;
+  }
+}

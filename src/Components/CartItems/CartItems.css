@@ -1,0 +1,218 @@
+.cartitems {
+  margin: 100px 170px;
+}
+
+.cartitems hr {
+  height: 3px;
+  background: #e2e2e2;
+  border: 0;
+}
+
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 75px;
+  padding: 20px 0;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cartitems-format {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.carticon-product-icon {
+  height: 62px;
+}
+
+.cartitems-remove-icon {
+  width: 15px;
+  margin: 0 40px;
+  cursor: pointer;
+}
+
+.cartitems-quantity {
+  width: 64px;
+  height: 50px;
+  border: 2px solid #ebebeb;
+  background: #fff;
+  border-radius: 13px;
+}
+
+.cartitems-down {
+  display: flex;
+  margin: 100px 0;
+}
+
+.cartitems-total {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  gap: 40px;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.cartitems-total button {
+  width: 262px;
+  height: 58px;
+  outline: none;
+  border: none;
+  border-radius: 45px;
+  background: #ff5a5a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cartitems-promocode {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cartitems-promocode p {
+  color: #555;
+}
+
+.cartitems-promobox {
+  width: 504px;
+  margin-top: 15px;
+  padding-left: 20px;
+  height: 58px;
+  background: #eaeaea;
+}
+
+.cartitems-promobox input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  width: 330px;
+  height: 50px;
+}
+
+.cartitems-promobox button {
+  width: 170px;
+  height: 58px;
+  font-size: 16px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .cartitems {
+    margin: 2% 5%; /* Adjust margin for better spacing on smaller screens */
+  }
+
+  .cartitems hr {
+    height: 3px;
+    background: #e2e2e2;
+    border: 0;
+  }
+
+  .cartitems-format-main {
+    display: flex;
+    justify-content: center;
+    /*grid-template-columns: 1fr; /* Adjust columns for better layout on smaller screens */
+    align-items: center;
+    gap: 10px; /* Adjust gap for better spacing on smaller screens */
+    padding: 20px 0;
+    color: #454545;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .cartitems-format {
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .carticon-product-icon {
+    height: 62px;
+  }
+
+  .cartitems-remove-icon {
+    width: 15px;
+    margin: 0 10px; /* Adjust margin for better spacing on smaller screens */
+    cursor: pointer;
+  }
+
+  .cartitems-quantity {
+    width: 64px;
+    height: 50px;
+    border: 2px solid #ebebeb;
+    background: #fff;
+    border-radius: 13px;
+  }
+
+  .cartitems-down {
+    display: flex;
+    flex-direction: column; /* Change to column layout for better display on smaller screens */
+    margin: 20px 0; /* Adjust margin for better spacing on smaller screens */
+  }
+
+  .cartitems-total {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust gap for better spacing on smaller screens */
+  }
+
+  .cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+  }
+
+  .cartitems-total button {
+    width: 100%; /* Make button full width for better display on smaller screens */
+  }
+
+  .cartitems-promocode {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .cartitems-promocode p {
+    color: #555;
+    margin-top: 10%;
+  }
+
+  .cartitems-promobox {
+    width: 100%; /* Make the promo box full width for better display on smaller screens */
+    margin-top: 5%;
+    padding-left: 20px;
+    height: 58px;
+    background: #eaeaea;
+    margin-bottom: 15%;
+  }
+
+  .cartitems-promobox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    width: 70%; /* Adjust width for better display on smaller screens */
+    height: 50px;
+  }
+
+  .cartitems-promobox button {
+    width: 30%; /* Adjust width for better display on smaller screens */
+    height: 58px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: -5%;
+  }
+}
