@@ -25,7 +25,7 @@ function Navbar() {
 
         <button
           id="toggleButton"
-          className="navbar-button"
+          className="nav-dropdown"
           onClick={toggleNavbar}
         >
           ☰
@@ -38,7 +38,7 @@ function Navbar() {
       >
         <style>
           {`
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 800px) {
       .navbar {
         display: ${isNavbarOpen ? "flex" : "none"} !important;
       }
