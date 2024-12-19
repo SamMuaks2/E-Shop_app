@@ -49,32 +49,34 @@
   padding-top: 50px;
 }
 
+@media(max-width: 1280px) {}
+
 @media (max-width: 768px) {
   .offers {
-    width: 80%; /* Reduce the width to fit smaller screens */
-    height: auto; /* Remove the fixed height */
-    margin-left: 5%; /* Adjust margins for better spacing */
+    width: 80%;
+    height: auto;
+    margin-left: 5%;
     margin-right: 5%;
-    padding: 10% 20px; /* Reduce the padding for smaller screens */
-    margin-top: 10%; /* Adjust margin-top for better spacing */
-    margin-bottom: 50px; /* Adjust margin-bottom for better spacing */
+    padding: 10% 20px;
+    margin-top: 10%;
+    margin-bottom: 50px;
   }
 
   .offers-left h1 {
-    font-size: 36px; /* Reduce font size for smaller screens */
+    font-size: 36px;
   }
 
   .offers-left p {
-    font-size: 16px; /* Reduce font size for smaller screens */
+    font-size: 16px;
   }
 
   .offers-left button {
-    width: 100%; /* Full-width button for small screens */
-    font-size: 18px; /* Reduce font size for smaller screens */
-    margin-top: 20px; /* Adjust margin-top for better spacing */
+    width: 100%;
+    font-size: 18px;
+    margin-top: 20px;
   }
 
   .offers-right {
-    display: none; /* Hide the right section on smaller screens */
+    display: none;
   }
 }

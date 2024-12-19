@@ -86,6 +86,10 @@
 }
 
 @media (max-width: 1024px) {
+  .hero {
+    margin-top: -15%;
+  }
+
   .hero-left {
     padding-left: 80px;
   }
@@ -108,13 +112,22 @@
     font-size: 16px;
   }
 
+  .hero-right {
+    margin-right: 80px;
+  }
+
   .hero-right img {
     width: 400px;
   }
 }
 
 @media (max-width: 800px) {
+  .hero {
+    margin-top: -25%;
+  }
+
   .hero-left {
+    margin-left: 5%;
     padding-left: 30px;
   }
 

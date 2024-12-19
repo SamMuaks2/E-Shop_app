@@ -88,26 +88,15 @@
   }
 }
 
-@media (max-width: 500px) {}
-
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .popular {
-    margin-top: 7%;
-    height: auto; /* Remove the fixed height */
-  }
-
-  .popular h1 {
-    font-size: 36px; /* Reduce font size for smaller screens */
-  }
-
-  .popular hr {
-    width: 150px; /* Reduce the width of the hr element */
+    height: 90vh;
+    margin-top: -35%;
   }
 
   .popular-item {
-    margin-top: 30px; /* Adjust margin for smaller screens */
-    flex-direction: column; /* Stack popular items in a column on smaller screens */
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
 }
