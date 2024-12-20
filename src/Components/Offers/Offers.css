@@ -159,33 +159,3 @@
     width: 120px;
   }
 }
-
-/* @media (max-width: 768px) {
-  .offers {
-    width: 80%;
-    height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10% 20px;
-    margin-top: 10%;
-    margin-bottom: 50px;
-  }
-
-  .offers-left h1 {
-    font-size: 36px;
-  }
-
-  .offers-left p {
-    font-size: 16px;
-  }
-
-  .offers-left button {
-    width: 100%;
-    font-size: 18px;
-    margin-top: 20px;
-  }
-
-  .offers-right {
-    display: none;
-  }
-} */
