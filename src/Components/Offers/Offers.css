@@ -3,7 +3,7 @@
   height: 60vh;
   display: flex;
   margin: auto;
-  margin-top: 57%;
+  margin-top: 10%;
   padding: 10% 140px;
   margin-bottom: 150px;
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
@@ -131,7 +131,7 @@
   }
 
   .offers-right img {
-    width: 180px;
+    width: 160px;
   }
 }
 
@@ -157,6 +157,6 @@
   }
 
   .offers-right img {
-    width: 120px;
+    width: 100px;
   }
 }
