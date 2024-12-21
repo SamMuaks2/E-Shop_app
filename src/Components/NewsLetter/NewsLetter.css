@@ -132,19 +132,19 @@
   }
 
   .newsletter div {
-    width: 500px;
-    height: 50px;
+    width: 400px;
+    height: 40px;
   }
 
   .newsletter div input {
-    width: 300px;
-    font-size: 14px;
+    width: 200px;
+    font-size: 13px;
   }
 
   .newsletter div button {
-    width: 120px;
-    height: 50px;
-    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
   }
 }
 
@@ -164,54 +164,14 @@
   .newsletter p {
     font-size: 13px;
     max-width: 200px;
+    text-align: center;
   }
 
   .newsletter div {
-    width: 500px;
-    height: 50px;
+    width: 290px;
   }
 
   .newsletter div input {
-    width: 300px;
-    font-size: 14px;
-  }
-
-  .newsletter div button {
-    width: 120px;
-    height: 50px;
-    font-size: 14px;
+    width: 130px;
   }
 }
-
-/* @media (max-width: 768px) {
-  .newsletter {
-    width: 90%; 
-    height: auto;
-    margin: 3%;
-    padding: 0 20px;
-    margin-bottom: 50px;
-  }
-
-  .newsletter h1 {
-    font-size: 36px;
-    padding-top: 10%;
-  }
-
-  .newsletter p {
-    font-size: 16px;
-  }
-
-  .newsletter div {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .newsletter input {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .newsletter div button {
-    width: 100%;
-  }
-} */
