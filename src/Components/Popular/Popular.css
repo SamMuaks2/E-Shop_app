@@ -1,5 +1,5 @@
 .popular {
-  margin-top: 7%;
+  margin-top: 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,6 +31,7 @@
 @media (max-width: 1280px) {
   .popular {
     height: 70vh;
+    margin-top: 10%;
   }
 
   .popular h1 {
@@ -51,6 +52,7 @@
 @media (max-width: 1024px) {
   .popular {
     height: 60vh;
+    margin-top: 2.5%;
   }
 
   .popular h1 {
@@ -70,7 +72,6 @@
 
 @media (max-width: 800px) {
   .popular {
-    margin-top: -15%;
     height: 50vh;
     gap: 6px;
   }
@@ -91,7 +92,7 @@
 @media (max-width: 500px) {
   .popular {
     height: 90vh;
-    margin-top: -35%;
+    margin-top: -5%;
   }
 
   .popular-item {

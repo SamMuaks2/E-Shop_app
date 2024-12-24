@@ -3,7 +3,7 @@
   height: 60vh;
   display: flex;
   margin: auto;
-  margin-top: 57%;
+  margin-top: 10%;
   padding: 10% 140px;
   margin-bottom: 150px;
   background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
@@ -81,7 +81,7 @@
 
 @media(max-width: 1024px) {
   .offers {
-    margin-top: -3%;
+    margin-top: 5%;
     padding: 0px 60px;
     margin-bottom: 80px;
     height: 40vh;
@@ -112,7 +112,7 @@
 
 @media(max-width: 800px) {
   .offers {
-    margin-top: -3%;
+    margin-top: 15%;
     margin-bottom: 60px;
   }
 
@@ -131,12 +131,13 @@
   }
 
   .offers-right img {
-    width: 180px;
+    width: 160px;
   }
 }
 
 @media(max-width: 500px) {
   .offers {
+    margin-top: 45%;
     height: 25vh;
     margin-bottom: 50px;
   }
@@ -156,6 +157,6 @@
   }
 
   .offers-right img {
-    width: 120px;
+    width: 100px;
   }
 }
