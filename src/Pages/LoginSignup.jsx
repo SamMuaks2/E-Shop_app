@@ -11,8 +11,8 @@ function LoginSignup() {
       
         <div className="loginsignup-fields">
           <div className="input-name">
-          <input type="text" placeholder="Your First Name" />
-          <input type="text" placeholder="Your Surname Name" /> 
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Surname" /> 
           </div>
 
           <input type="email" placeholder="Email Address" />
