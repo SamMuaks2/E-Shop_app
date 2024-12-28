@@ -31,23 +31,25 @@
   padding-bottom: 70px;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 1280px) {}
+
+/* @media screen and (max-width: 768px) {
   .descriptionbox {
-    margin: 20px; /* Adjust margin for better spacing on smaller screens */
+    margin: 20px;
   }
 
   .descriptionbox-navigator {
-    gap: 5px; /* Adjust gap for better spacing on smaller screens */
+    gap: 5px;
   }
 
   .descriptionbox-nav-box {
-    font-size: 12px; /* Adjust font size for better readability on smaller screens */
-    height: 50px; /* Adjust height for better spacing on smaller screens */
+    font-size: 12px;
+    height: 50px;
   }
 
   .descriptionbox-description {
-    gap: 10px; /* Adjust gap for better spacing on smaller screens */
-    padding: 10px; /* Adjust padding for better spacing on smaller screens */
-    padding-bottom: 20px; /* Adjust padding for better spacing on smaller screens */
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 20px;
   }
-}
+} */
