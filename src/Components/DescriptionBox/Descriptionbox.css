@@ -41,6 +41,10 @@
   .descriptionbox {
     margin: 60px 20px;
   }
+
+  .descriptionbox-description {
+    font-size: 14px;
+  }
 }
 
 /* 
