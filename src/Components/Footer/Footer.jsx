@@ -45,7 +45,7 @@ function Footer() {
 
       <div className="footer-copyright">
         <hr />
-        <p>Sam-Muaks ©️ {year} 2023 - All Rights Reserved</p>
+        <p>Sam-Muaks ©️ {year} - All Rights Reserved</p>
       </div>
     </div>
   );
