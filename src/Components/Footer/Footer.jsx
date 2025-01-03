@@ -6,6 +6,10 @@ import pinterest_icon from "../Assets/pintester_icon.png";
 import whatsapp_icon from "../Assets/whatsapp_icon.png";
 
 function Footer() {
+
+  const date = new Date();
+  let year = date.getFullYear();
+
   return (
     <div className="footer">
       <div className="footer-logo">
@@ -41,7 +45,7 @@ function Footer() {
 
       <div className="footer-copyright">
         <hr />
-        <p>Sam-Muaks ©️ 2023 - All Rights Reserved</p>
+        <p>Sam-Muaks ©️ {year} 2023 - All Rights Reserved</p>
       </div>
     </div>
   );
