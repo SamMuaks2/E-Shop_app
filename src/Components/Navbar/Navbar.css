@@ -302,3 +302,37 @@
     display: none;
   }
 }
+
+@media (max-width: 300px) {
+  .navbar {
+    width: 70%;
+    margin-bottom: 5%;
+    background-size: cover;
+  }
+
+  .nav-menu {
+    left: 20px;
+    margin-left: -12%;
+    gap: 8px; 
+  }
+
+  .nav-menu hr {
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #ff4141;
+  }
+
+  .nav-login-cart button {
+    left: 100px;
+  }
+
+  .nav-login-cart img {
+    left: 85px;
+  }
+
+  .nav-cart-count {
+    left: 95px;
+  }
+}
