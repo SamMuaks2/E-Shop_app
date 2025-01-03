@@ -8,15 +8,17 @@ import { ShopContext } from "../../Context/ShopContext";
 function Navbar() {
   const [menu, setMenu] = useState("Shop");
   const { getTotalCartItems } = useContext(ShopContext);
-
+  
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
   const toggleNavbar = () => {
+    console.log("Before toggle:", isNavbarOpen);
     setIsNavbarOpen(!isNavbarOpen);
+    console.log("After toggle:", !isNavbarOpen);
   };
 
   return (
-    <div>
+    <>
       <div className="nav-hide">
         <div className="nav-logo">
           <img src={logo} alt="logo" />
@@ -28,23 +30,29 @@ function Navbar() {
           className="nav-dropdown"
           onClick={toggleNavbar}
         >
-          ☰
+          {isNavbarOpen ? "X" : "☰"}
         </button>
       </div>
 
       <nav
-        className={`navbar ${isNavbarOpen ? "open" : ""}`}
-        style={{ display: isNavbarOpen ? "none" : "flex" }}
+        className={`navbar ${isNavbarOpen ? "open" : "closed"}`}
+        // style={{ display: isNavbarOpen ? "none" : "flex" }}
       >
-        <style>
+        {/* <style>
           {`
     @media screen and (max-width: 800px) {
       .navbar {
         display: ${isNavbarOpen ? "flex" : "none"} !important;
       }
     }
+
+    @media screen and (max-width: 465px) {
+      .navbar {
+        display: ${isNavbarOpen ? "flex" : "none"} !important;
+      }
+    }
   `}
-        </style>
+        </style> */}
 
         <div className="navbar">
           <div className="nav-logo nav-reveal">
@@ -110,7 +118,7 @@ function Navbar() {
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
 }
 
