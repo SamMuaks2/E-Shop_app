@@ -36,24 +36,8 @@ function Navbar() {
 
       <nav
         className={`navbar ${isNavbarOpen ? "open" : "closed"}`}
-        // style={{ display: isNavbarOpen ? "none" : "flex" }}
       >
-        {/* <style>
-          {`
-    @media screen and (max-width: 800px) {
-      .navbar {
-        display: ${isNavbarOpen ? "flex" : "none"} !important;
-      }
-    }
-
-    @media screen and (max-width: 465px) {
-      .navbar {
-        display: ${isNavbarOpen ? "flex" : "none"} !important;
-      }
-    }
-  `}
-        </style> */}
-
+        
         <div className="navbar">
           <div className="nav-logo nav-reveal">
             <img src={logo} alt="logo" />

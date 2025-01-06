@@ -328,7 +328,7 @@
   }  
 }
 
-/* @media (max-width: 418px) {
+@media (max-width: 418px) {
   .navbar {
     width: 70%;
     margin-bottom: 5%;
@@ -375,4 +375,4 @@
   .navbar {
     transition: all 0.3s ease-in-out;
   }
-} */
+}
