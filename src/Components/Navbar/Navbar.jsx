@@ -1,7 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
 
@@ -9,7 +10,12 @@ function Navbar() {
   const [menu, setMenu] = useState("Shop");
   const { getTotalCartItems } = useContext(ShopContext);
   
+  const location = useLocation();
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  useEffect(() => {
+    setIsNavbarOpen(false);
+  }, [location.pathname]);
 
   const toggleNavbar = () => {
     console.log("Before toggle:", isNavbarOpen);
@@ -48,11 +54,12 @@ function Navbar() {
             <li
               onClick={() => {
                 setMenu("shop");
+                setIsNavbarOpen(false);
               }}
             >
               <Link style={{ textDecoration: "none" }} to="/">
                 Shop
-              </Link>{" "}
+              </Link>
               {menu === "shop" ? <hr /> : <></>}
             </li>
 
@@ -63,7 +70,7 @@ function Navbar() {
             >
               <Link style={{ textDecoration: "none" }} to="/mens">
                 Men
-              </Link>{" "}
+              </Link>
               {menu === "mens" ? <hr /> : <></>}
             </li>
 
@@ -74,7 +81,7 @@ function Navbar() {
             >
               <Link style={{ textDecoration: "none" }} to="/womens">
                 Women
-              </Link>{" "}
+              </Link>
               {menu === "womens" ? <hr /> : <></>}
             </li>
 
@@ -85,7 +92,7 @@ function Navbar() {
             >
               <Link style={{ textDecoration: "none" }} to="/kids">
                 Kids
-              </Link>{" "}
+              </Link>
               {menu === "kids" ? <hr /> : <></>}
             </li>
           </ul>

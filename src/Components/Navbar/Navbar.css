@@ -366,10 +366,11 @@
   }
 
   .navbar.open {
-    display: flex;
+    display: flex !important;
   }
+
   .navbar.closed {
-    display: none;
+    display: none !important;
   }
 
   .navbar {
