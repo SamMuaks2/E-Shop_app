@@ -7,7 +7,7 @@ import NewsLetter from "../Components/NewsLetter/NewsLetter";
 
 function Shop() {
   return (
-    <div>
+    <div style={{marginTop: "5%"}}>
       <Hero />
       <Popular />
       <Offers />
