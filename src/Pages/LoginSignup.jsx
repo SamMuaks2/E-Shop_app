@@ -5,6 +5,65 @@ function LoginSignup() {
 
   const [state, setState] = useState("Login");
 
+  const [formData, setFormData] = useState({
+    firstname: "",
+    surname: "",
+    password: "",
+    email: ""
+  })
+
+  const changeHandler = (e) => {
+    setFormData({...formData, [e.target.name]:e.target.value})
+  }
+
+  const login = async () => {
+    console.log("Login executed", formData);
+    
+    let responseData;
+
+    await fetch('http://localhost:4000/login', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/form-data',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    }).then((response) => response.json()).then((data) => responseData = data)
+
+    if (responseData.success) {
+      localStorage.setItem('auth-token', responseData.token);
+      window.location.replace("/");
+    }
+
+    else {
+      alert(responseData.errors)
+    }
+  }
+  
+  const signup = async () => {
+    console.log("Sign up executed", formData);
+
+    let responseData;
+
+    await fetch('http://localhost:4000/signup', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/form-data',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    }).then((response) => response.json()).then((data) => responseData = data)
+
+    if (responseData.success) {
+      localStorage.setItem('auth-token', responseData.token);
+      window.location.replace("/");
+    }
+
+    else {
+      alert(responseData.errors)
+    }
+  }
+
   return (
     <div className="loginsignup">
 
@@ -14,15 +73,15 @@ function LoginSignup() {
       
         <div className="loginsignup-fields">
           {state === "Sign Up" ? <div className="input-name">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Surname" /> 
+            <input name="firstname" value={formData.firstname} onChange={changeHandler} type="text" placeholder="First Name" />
+            <input name="surname" value={formData.surname} onChange={changeHandler} type="text" placeholder="Surname" /> 
           </div> : <></> }
 
-          <input type="email" placeholder="Email Address" />
-          <input type="password" placeholder="Password" />
+          <input name="email" value={formData.email} onChange={changeHandler} type="email" placeholder="Email Address" />
+          <input name="password" value={formData.password} onChange={changeHandler} type="password" placeholder="Password" />
         </div>
       
-        <button>Continue</button>
+        <button onClick={() => {state === "Login" ? login() : signup()}}>Continue</button>
 
         {state === "Sign Up" ? 
         
