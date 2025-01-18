@@ -61,7 +61,7 @@ function LoginSignup() {
 
     else {
       alert(responseData.errors)
-    }
+    };
   }
 
   return (
