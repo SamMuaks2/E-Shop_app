@@ -37,7 +37,7 @@ function Footer() {
         </div>
 
         <div className="footer-icons-container">
-          <a href="https://wa.me/+2348085145419">
+          <a href="https://wa.me/+2347039479761">
             <img src={whatsapp_icon} alt="Whatsapp" />
           </a>
         </div>
