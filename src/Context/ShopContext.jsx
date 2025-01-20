@@ -11,7 +11,7 @@ const getDefaultCart = () => {
   return cart;
 };
 
-const API_BASE_URL = "https://e-shop-backend-five.vercel.app";
+const API_BASE_URL = "https://e-shop-backend-eta.vercel.app/";
 
 const ShopContextProvider = (props) => {
   const [all_product, setAll_product] = useState([]);
