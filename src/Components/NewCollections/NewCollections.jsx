@@ -6,7 +6,7 @@ import Item from "../Item/Item";
 function NewCollections() {
   const [new_collection, setNew_collection] = useState([]);
 
-  const API_BASE_URL = "https://e-shop-backend-eta.vercel.app/";
+  const API_BASE_URL = "https://e-shop-backend-eta.vercel.app";
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/newcollection`).then((response) => response.json).then((data) => setNew_collection(data));

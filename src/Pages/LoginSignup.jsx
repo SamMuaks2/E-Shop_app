@@ -16,7 +16,7 @@ function LoginSignup() {
     setFormData({...formData, [e.target.name]:e.target.value})
   }
 
-  const API_BASE_URL = "https://e-shop-backend-eta.vercel.app/";
+  const API_BASE_URL = "https://e-shop-backend-eta.vercel.app";
 
   const login = async () => {
     console.log("Login executed", formData);
