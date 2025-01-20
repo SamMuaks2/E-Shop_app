@@ -11,15 +11,17 @@ const getDefaultCart = () => {
   return cart;
 };
 
+const API_BASE_URL = "https://e-shop-backend-five.vercel.app";
+
 const ShopContextProvider = (props) => {
   const [all_product, setAll_product] = useState([]);
   const [cartItems, setCartItems] = useState(getDefaultCart());
 
   useEffect(() => {
-    fetch('http://localhost:4000/allproducts').then((response) => response.json()).then((data) => setAll_product(data))
+    fetch(`${API_BASE_URL}/allproducts`).then((response) => response.json()).then((data) => setAll_product(data))
 
     if (localStorage.getItem('auth-token')) {
-      fetch('http://localhost:4000/getcart', {
+      fetch(`${API_BASE_URL}/getcart`, {
         method: 'POST',
         headers: {
           Accept: 'application/form-data',
@@ -35,7 +37,7 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
 
     if(localStorage.getItem('auth-token')) {
-      fetch('http://localhost:4000/addtocart', {
+      fetch(`${API_BASE_URL}/addtocart`, {
         method: 'POST',
         headers: {
           Accept: 'application/form-data',
@@ -53,7 +55,7 @@ const ShopContextProvider = (props) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
 
     if(localStorage.getItem('auth-token')) {
-      fetch('http://localhost:4000/removefromcart', {
+      fetch(`${API_BASE_URL}/removefromcart`, {
         method: 'POST',
         headers: {
           Accept: 'application/form-data',

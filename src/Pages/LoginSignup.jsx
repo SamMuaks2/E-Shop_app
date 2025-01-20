@@ -16,12 +16,14 @@ function LoginSignup() {
     setFormData({...formData, [e.target.name]:e.target.value})
   }
 
+  const API_BASE_URL = "https://e-shop-backend-five.vercel.app";
+
   const login = async () => {
     console.log("Login executed", formData);
     
     let responseData;
 
-    await fetch('http://localhost:4000/login', {
+    await fetch(`${API_BASE_URL}/login`, {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',
@@ -45,7 +47,7 @@ function LoginSignup() {
 
     let responseData;
 
-    await fetch('http://localhost:4000/signup', {
+    await fetch(`${API_BASE_URL}/signup`, {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',

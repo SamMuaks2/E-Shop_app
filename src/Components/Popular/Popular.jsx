@@ -6,8 +6,10 @@ import Item from "../Item/Item";
 function Popular() {
   const [popularProducts, setPopularProducts] = useState([]);
 
+  const API_BASE_URL = "https://e-shop-backend-five.vercel.app";
+
   useEffect(() => {
-    fetch('http://localhost:4000/popularinwomen').then((response) => response.json()).then((data) => setPopularProducts(data));
+    fetch(`${API_BASE_URL}/popularinwomen`).then((response) => response.json()).then((data) => setPopularProducts(data));
   }, [])
 
   return (
