@@ -5,6 +5,8 @@ import Item from "../Item/Item";
 
 function NewCollections() {
   const [new_collection, setNew_collection] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const API_BASE_URL = "https://e-shop-backend-eta.vercel.app";
 
@@ -27,8 +29,15 @@ function NewCollections() {
           console.error("API did not return an array:", data);
         }
       })
-      .catch((error) => console.error("Error fetching new collections:", error));
+      // .catch((error) => console.error("Error fetching new collections:", error));
+
+      .catch((error) => setError(error.message))
+      .finally(() => setLoading(false));
   }, []);
+
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
   
 
   return (
