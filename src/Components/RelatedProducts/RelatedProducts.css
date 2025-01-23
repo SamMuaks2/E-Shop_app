@@ -85,6 +85,7 @@
     height: 50vh;
     gap: 6px;
     margin-bottom: 5%;
+    margin-bottom: 250px;
   }
 
   .relatedproducts h1 {
@@ -105,6 +106,7 @@
   .relatedproducts {
     height: 90vh;
     margin-bottom: 50%;
+    margin-bottom: 200px;
   }
 
   .relatedproducts-item {
