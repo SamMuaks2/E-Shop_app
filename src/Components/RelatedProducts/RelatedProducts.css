@@ -97,6 +97,7 @@
 
   .relatedproducts-item {
     gap: 5px;
+    margin-bottom: 5%;
   }
 }
 
@@ -110,5 +111,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    margin-bottom: 3%;
   }
 }
