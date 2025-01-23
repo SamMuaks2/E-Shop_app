@@ -8,9 +8,28 @@ function NewCollections() {
 
   const API_BASE_URL = "https://e-shop-backend-eta.vercel.app";
 
+  // useEffect(() => {
+  //   fetch(`${API_BASE_URL}/newcollection`).then((response) => response.json).then((data) => setNew_collection(data));
+  // }, [])
+
   useEffect(() => {
-    fetch(`${API_BASE_URL}/newcollection`).then((response) => response.json).then((data) => setNew_collection(data));
-  }, [])
+    fetch(`${API_BASE_URL}/newcollection`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json(); // Ensure `.json()` is executed
+      })
+      .then((data) => {
+        if (Array.isArray(data)) {
+          setNew_collection(data);
+        } else {
+          console.error("API did not return an array:", data);
+        }
+      })
+      .catch((error) => console.error("Error fetching new collections:", error));
+  }, []);
+  
 
   return (
     <div className="new-collections">
