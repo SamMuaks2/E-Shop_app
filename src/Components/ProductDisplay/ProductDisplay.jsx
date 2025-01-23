@@ -70,7 +70,7 @@ const ProductDisplay = (props) => {
         </button>
 
         <p className="productdisplay-right-category">
-          <span>Category :</span>Women, T-Shirt, Crop Top
+          <span>Category :</span>{product.category}
         </p>
 
         <p className="productdisplay-right-category">
