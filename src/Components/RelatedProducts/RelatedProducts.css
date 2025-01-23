@@ -84,7 +84,7 @@
   .relatedproducts {
     height: 50vh;
     gap: 6px;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     margin-bottom: 250px;
   }
 
@@ -105,8 +105,8 @@
 @media (max-width: 500px) {
   .relatedproducts {
     height: 90vh;
-    margin-bottom: 50%;
-    margin-bottom: 200px;
+    /* margin-bottom: 50%; */
+    margin-bottom: 600px;
   }
 
   .relatedproducts-item {
